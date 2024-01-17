@@ -16,7 +16,7 @@ function botaoSignIn(){
     if (lembrar==true){
         return alert("Username or Email: " + nomeEmailValue + "\nPassword: " + senhaValue + "\nLembrar:sim");
     }
-    else if (lembrar!=true){
+    else if (lembrar!=true){ //se nao for apertado o botao, lembrar = undefineds
         return alert("Username or Email: " + nomeEmailValue + "\nPassword: " + senhaValue + "\nLembrar:nao");
     }
 }
