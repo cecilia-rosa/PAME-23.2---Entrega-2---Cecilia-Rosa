@@ -1,9 +1,9 @@
 .header{
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
     height: 6vh;
-    background-color: rgba(26, 25, 25, 0.856);
+    background-color: rgb(34, 33, 33);
 }
 
 .header h1{
@@ -17,10 +17,37 @@
     font-size: 3vh;
 }
 
-.main{
+.header img{
+    height: 4vh;
+}
+
+.formulario {
     display: flex;
     align-items: center;
-    width: 40vw;
+    justify-content:space-around;
+    width: 35vw;
     height: 60vh;
     background-color: rgb(65, 63, 63);
+}
+
+
+
+.footer p{
+    color: dimgray;
+    font-size: 2vh;
+}
+
+body {
+    background-image: url('./fundo.jpg');
+    background-size: contain;
+    background-position: center;  
+    margin: 0; 
+    padding: 0; 
+}
+
+.footer{
+    display:flex;
+    align-items: last baseline;
+    padding: 5vh;
+
 }
