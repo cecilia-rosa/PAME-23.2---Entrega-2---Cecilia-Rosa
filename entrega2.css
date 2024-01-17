@@ -51,4 +51,5 @@ body {
     display:flex;
     align-items: last baseline;
     padding: 5vh;
+    width: 100vw;
 }
