@@ -6,6 +6,7 @@ function botaoRememberMe (){
 }
 
 //alerta com os dados apos botao sign in ser clicado
+
 function botaoSignIn(){
     var nomeEmailInput = document.getElementById("nome_email");
     var senhaInput = document.getElementById("senha");
