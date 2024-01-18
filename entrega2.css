@@ -41,6 +41,7 @@
     padding-bottom: 4%;
     padding-top: 0%;
     margin-top: 10%;
+    border-radius: 10px ;
 }
 
 .formulario {
@@ -55,7 +56,8 @@
 
 .footer p{
     color: dimgray;
-    height: 1vh;
+    height: 0.2vh;
+    margin-right: 0.4%;
 }
 
 body {
@@ -94,4 +96,19 @@ body {
 
 .main p{
     color:white;
+}
+
+.main .fundo_login button.green-button{
+    background-color: #00FF00;
+    color: white;
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    cursor:pointer;
+    height: 30px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
