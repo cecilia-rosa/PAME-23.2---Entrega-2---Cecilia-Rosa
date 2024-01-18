@@ -32,15 +32,15 @@
 }
 
 .fundo_login{
-    height: 50vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color:  rgb(65,63,63);
-    padding-bottom: 4%;
+    padding-bottom: 5%;
     padding-top: 0%;
-    margin-top: 10%;
+    margin-top: 15%;
     border-radius: 10px ;
 }
 
@@ -56,12 +56,11 @@
 
 .footer p{
     color: dimgray;
-    height: 0.2vh;
+    height: 0.1vh;
     margin-right: 0.6%;
 }
 
 body {
-
     background:  linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url('./fundo.jpg');;
     background-size: cover;
     background-position: center;
@@ -92,10 +91,13 @@ body {
 .main h3{
     color:white;
     font-size: 3.5vh;
+    margin-bottom: 15%;
 }
 
 .main p{
     color:white;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .main .fundo_login button.green-button{
@@ -138,10 +140,11 @@ body {
     border-radius: 10px;
     border: none;
     cursor:pointer;
-    height: 30px;
+    height: 32px;
     width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2%;
+    margin-top: 3%;
 }
+
