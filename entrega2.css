@@ -111,4 +111,37 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2%;
+}
+
+.main .fundo_login button.google-button{
+    background-color:  rgb(34, 33, 33);
+    color: white;
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    cursor:pointer;
+    height: 30px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main .fundo_login button.facebook-button{
+    background-color:  rgb(34, 33, 33);
+    color: white;
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    cursor:pointer;
+    height: 30px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
 }
