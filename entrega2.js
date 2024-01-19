@@ -12,17 +12,18 @@ function botaoSignIn() {
 
 
     // cria estrutura de texto HTML
-    var confirmacaoHTML = "<h2>Login Confirmado</h2>";
-    confirmacaoHTML += "<p>Email: " + email + "</p>";
-    confirmacaoHTML += "<p>Senha: " + senha + "</p>";
-    confirmacaoHTML += "<p>Lembrar de mim: " + (lembrar ? "Sim" : "Não") + "</p>";
+    var confirmacaoHTML = "<h2 style='font-size: 11px;'>Login Confirmado</h2>";  
+    confirmacaoHTML += "<p style='font-size: 10px;'>Email: " + email + "</p>";  
+    confirmacaoHTML += "<p style='font-size: 10px;'>Senha: " + senha + "</p>";  
+    confirmacaoHTML += "<p style='font-size: 10px;'>Lembrar de mim: " + (lembrar ? "Sim" : "Não") + "</p>"; 
 
-    // insere a estrutura HTML após o formulário
+    // insere a estrutura HTML depois do formulário
     var confirmationContainer = document.createElement('div');
     confirmationContainer.innerHTML = confirmacaoHTML;
 
 
     document.getElementById('formulario').insertAdjacentElement('afterend', confirmationContainer);
+    
 }
 
 

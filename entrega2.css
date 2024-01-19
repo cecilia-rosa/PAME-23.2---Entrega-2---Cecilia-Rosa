@@ -215,11 +215,12 @@ body {
 .main .fundo_login .inputs .remember label.slide {
     display: inline-block;
     position: relative;
-    width: 50px;
+    width: 45px;
     height: 24px;
     background-color: #ccc;
     border-radius: 12px;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 
@@ -244,6 +245,8 @@ body {
 .main .fundo_login .inputs .remember input[type="checkbox"]:checked + label.slide:after {
     transform: translateX(26px); 
 }
+
+
 
 .main .fundo_login .inputs .remember {
     color:white;
