@@ -193,9 +193,9 @@ body {
 .main .fundo_login .inputs input{
     background-color: rgb(34, 33, 33);
     border: none;
-    padding: 8px; /* Espaçamento interno da caixa de input */
-    border-radius: 5px; /* Borda arredondada */
-    font-size: 16px; /* Tamanho da fonte dentro da caixa de input */
+    padding: 8px; 
+    border-radius: 5px; 
+    font-size: 16px; 
     margin-bottom: 10px;
     width: 250px;
 }
