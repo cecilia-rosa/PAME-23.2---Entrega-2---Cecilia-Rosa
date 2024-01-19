@@ -32,13 +32,13 @@
 }
 
 .fundo_login{
-    height: 45vh;
+    height: 47vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color:  rgb(65,63,63);
-    padding-bottom: 5%;
+    padding-bottom: 7%;
     padding-top: 0%;
     margin-top: 15%;
     border-radius: 10px ;
@@ -130,7 +130,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.main .fundo_login button.google-button img{
+    padding-right: 5%;
 }
 
 .main .fundo_login button.facebook-button{
@@ -150,6 +153,11 @@ body {
     margin-bottom: 7%;
 }
 
+.main .fundo_login button.facebook-button img{
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
 .main .fundo_login .inputs{
     display: flex;
     justify-content: center ;
@@ -160,3 +168,27 @@ body {
     margin-top: 0%;
 }
 
+.main .fundo_login .inputs .username{ 
+    color:white;
+    padding-left: 0%;
+    padding-right: 35%; 
+    padding-top: 15%;
+}
+
+.main .fundo_login .inputs .password{ 
+    color:white;
+    padding-left: 0%;
+    padding-right: 72%; 
+}
+
+
+
+.main .fundo_login .inputs input{
+    background-color: rgb(34, 33, 33);
+    border: none;
+    padding: 8px; /* Espaçamento interno da caixa de input */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte dentro da caixa de input */
+    margin-bottom: 10px;
+    width: 250px;
+}

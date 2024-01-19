@@ -14,11 +14,13 @@ function botaoSignIn(){
     var senhaValue = senhaInput.value;
     var lembrar = remember
     if (lembrar==true){
-        return alert("Username or Email: " + nomeEmailValue + "\nPassword: " + senhaValue + "\nLembrar:sim");
+        return alert("Username or Email: " + nomeEmailValue + "\nPassword: " + senhaValue + "\nRemember me: no");
     }
     else if (lembrar!=true){ //se nao for apertado o botao, lembrar = undefined
-        return alert("Username or Email: " + nomeEmailValue + "\nPassword: " + senhaValue + "\nLembrar:nao");
+        return alert("Username or Email: " + nomeEmailValue + "\nPassword: " + senhaValue + "\nRemember me: yes");
     }
 }
+
+
 
 
