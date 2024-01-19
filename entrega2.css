@@ -180,12 +180,18 @@ body {
     padding-left: 0%;
     padding-right: 35%; 
     padding-top: 15%;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4vh;
 }
 
 .main .fundo_login .inputs .password{ 
     color:white;
     padding-left: 0%;
     padding-right: 72%; 
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4vh;
 }
 
 
@@ -199,3 +205,72 @@ body {
     margin-bottom: 10px;
     width: 250px;
 }
+
+
+.main .fundo_login .inputs .remember input[type="checkbox"] {
+    display: none; 
+}
+
+
+.main .fundo_login .inputs .remember label.slide {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 24px;
+    background-color: #ccc;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+.main .fundo_login .inputs .remember label.slide:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+
+.main .fundo_login .inputs .remember input[type="checkbox"]:checked + label.slide {
+    background-color: #00FF00;
+}
+
+
+.main .fundo_login .inputs .remember input[type="checkbox"]:checked + label.slide:after {
+    transform: translateX(26px); 
+}
+
+.main .fundo_login .inputs .remember {
+    color:white;
+    padding-right: 40%;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4vh;
+}
+
+.forgot-password {
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    text-align: right; 
+}
+
+.forgot-password-link {
+    color: #007BFF; 
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5%;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline; 
+}
+

@@ -1,26 +1,25 @@
-//marca que o remember me foi acionado
+function botaoSignIn() {
+    // Obter valores dos campos
+    var email = document.getElementById('nome_email').value;
+    var senha = document.getElementById('senha').value;
+    var lembrar = document.getElementById('remember-checkbox').checked;
 
-function botaoRememberMe (){
-    var remember = true
-    return remember
+    // Exibir alerta com as informações
+    alert("Username ou email: " + email + "\nPassword: " + senha + "\nRemember me: " + lembrar);
+
+    var confirmacaoHTML = "<h2>Login Confirmado</h2>";
+    confirmacaoHTML += "<p>Email: " + email + "</p>";
+    confirmacaoHTML += "<p>Senha: " + senha + "</p>";
+    confirmacaoHTML += "<p>Lembrar de mim: " + (lembrar ? "Sim" : "Não") + "</p>";
+
+    // Criar um elemento div para a estrutura HTML
+    var confirmationContainer = document.createElement('div');
+    confirmationContainer.innerHTML = confirmacaoHTML;
+
+    // Inserir a estrutura HTML após o formulário
+    var formElement = document.getElementById('loginForm');
+    formElement.parentNode.insertBefore(confirmationContainer, formElement.nextSibling);
 }
-
-//alerta com os dados apos botao sign in ser clicado
-
-function botaoSignIn(){
-    var nomeEmailInput = document.getElementById("nome_email");
-    var senhaInput = document.getElementById("senha");
-    var nomeEmailValue = nomeEmailInput.value;
-    var senhaValue = senhaInput.value;
-    var lembrar = remember
-    if (lembrar==true){
-        return alert("Username or Email: " + nomeEmailValue + "\nPassword: " + senhaValue + "\nRemember me: no");
-    }
-    else if (lembrar!=true){ //se nao for apertado o botao, lembrar = undefined
-        return alert("Username or Email: " + nomeEmailValue + "\nPassword: " + senhaValue + "\nRemember me: yes");
-    }
-}
-
 
 
 
