@@ -1,25 +1,31 @@
+
 function botaoSignIn() {
-    // Obter valores dos campos
+
+    // obtem valores dos inputs
     var email = document.getElementById('nome_email').value;
     var senha = document.getElementById('senha').value;
     var lembrar = document.getElementById('remember-checkbox').checked;
 
-    // Exibir alerta com as informações
+    // exibe alerta com as informacoes inseridas
     alert("Username ou email: " + email + "\nPassword: " + senha + "\nRemember me: " + lembrar);
 
+
+
+    // cria estrutura de texto HTML
     var confirmacaoHTML = "<h2>Login Confirmado</h2>";
     confirmacaoHTML += "<p>Email: " + email + "</p>";
     confirmacaoHTML += "<p>Senha: " + senha + "</p>";
     confirmacaoHTML += "<p>Lembrar de mim: " + (lembrar ? "Sim" : "Não") + "</p>";
 
-    // Criar um elemento div para a estrutura HTML
+    // insere a estrutura HTML após o formulário
     var confirmationContainer = document.createElement('div');
     confirmationContainer.innerHTML = confirmacaoHTML;
 
-    // Inserir a estrutura HTML após o formulário
-    var formElement = document.getElementById('loginForm');
-    formElement.parentNode.insertBefore(confirmationContainer, formElement.nextSibling);
+
+    document.getElementById('formulario').insertAdjacentElement('afterend', confirmationContainer);
 }
+
+
 
 
 
